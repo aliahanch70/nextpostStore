@@ -83,10 +83,10 @@ export default function ProductBox({_id,title,description,price,images}) {
             // </div>
         <div className="w-[170px] sm:w-[250px] sm:m-3 m-2 bg-[#363636] h-auto overflow-hidden rounded shadow">
             <div className="center items-center">
-                        <img  className="overflow-hidden w-100 h-[450]" src={images} alt="sdf"/>
+                <img  className="overflow-hidden w-100 h-[450]" src={images} alt="sdf"/>
                 <div className="flex items-center justify-between p-3 rounded">
-                            <h3 className="sm:font-medium font-normal font-sans  text-amber-50">{title}</h3>
-                    <h3 className="text-amber-300 m-0 ">{description}</h3>
+                    <h3 className="sm:font-medium font-medium text-sm font-sans  text-amber-50">{title}</h3>
+                    <h3 className="text-amber-300 m-0 text-xs ">{description}</h3>
                 </div>
             </div>
         </div>

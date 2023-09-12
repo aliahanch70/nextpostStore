@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function FooterNav() {
     return(
         <>
             {/*<Link href={'/'}>Ecommerce</Link>*/}
-            <nav className=" m-2 px-3 rounded-xl bg-opacity-30 sticky top-2.5 z-10 bg-white backdrop-filter backdrop-blur-lg">
+            <nav className=" m-2 px-3 rounded-xl bg-opacity-30 sticky bottom-5 z-10 bg-white backdrop-filter backdrop-blur-lg">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="flex items-center justify-between h-16">
                         <span className="text-2xl text-gray-900 font-semibold">Logo</span>
