@@ -1,5 +1,5 @@
 
-export const productD= () => [
+export const productD = [
     {
         id:'64f716ee09683fbde2f70b38',
         title:"poco x3",

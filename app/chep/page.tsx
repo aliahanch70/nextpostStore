@@ -59,6 +59,9 @@ export default async function Posts() {
     //         console.log("An error occurred while deleting ", error);
     //     }
     // };
+    data.posts.forEach((e: { _id: any; title: any; ss: any; }) => {
+        console.log(`${e._id} ${e.title} ${e.ss}`);
+    });
 
     return (
         <>
@@ -70,33 +73,33 @@ export default async function Posts() {
                 {/*<h1 className="">Top 20 Added Posts</h1>*/}
                 <div >
                     <div className="m-4 flex flex-row-reverse">
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/best'>پرفروش</Link>
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/'>جدید ترین</Link>
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/'>ارزان ترین</Link>
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/'>گران ترین</Link>
+                        <Link className="rounded-md bg-white p-2 flex m-1" href='/'>پرفروش</Link>
+                        <button className="rounded-md bg-white p-2 flex m-1">جدید ترین</button>
+                        <button className="rounded-md bg-white p-2 flex m-1">ارزان ترین</button>
+                        <button className="rounded-md bg-white p-2 flex m-1">گران ترین</button>
                     </div>
-                {data.posts.length > 0 ? (
-                    <div className={"flex flex-wrap justify-center"}>
+                    {data.posts.length > 0 ? (
+                        <div className={"flex flex-wrap justify-center"}>
 
-                        {data.posts.map((post: Post, index: Key | null | undefined) => {
-                            return (
-                                <Link key={index}  href={"product/"+post._id}>
+                            {data.posts.sort((a,b )=> {return  a.ss > b.ss} ).map((post: Post, index: Key | null | undefined) => {
+                                return (
+                                    <div key={index} >
                                         <ProductBox _id={post._id} title={post.title} description={post.ss} price={undefined} images={post.image}/>
-                                </Link>
-                            );
-                        })}
-                    </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
 
-                ) : (
-                    <h2 className="">Ooops! No posts added so far</h2>
-                )}
+                    ) : (
+                        <h2 className="">Ooops! No posts added so far</h2>
+                    )}
                 </div>
             </div>
             <div>
                 sidevar
             </div>
 
-        <FooterNav/>
+            <FooterNav/>
 
 
 

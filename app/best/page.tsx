@@ -36,7 +36,7 @@ async function getData() {
 
 export default async function Posts() {
     const data = await getData()
-    console.log(data)
+    // console.log(data)
 
 
     // const [posts, setPosts] = useState()
