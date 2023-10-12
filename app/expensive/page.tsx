@@ -67,7 +67,7 @@ export default async function Posts() {
     // });
 
     data.posts.sort((a: { ss: number; }, b: { ss: number; }) => {
-        return a.ss - b.ss;
+        return b.ss - a.ss;
     })
 
     return (
@@ -83,7 +83,7 @@ export default async function Posts() {
                     {data.posts.length > 0 ? (
                         <div className={"flex flex-wrap justify-center"}>
 
-                            {data.posts.sort((a,b )=> {return  a.ss > b.ss} ).map((post: Post, index: Key | null | undefined) => {
+                            {data.posts.sort((a: { ss: number; }, b: { ss: number; } )=> {return  a.ss > b.ss} ).map((post: Post, index: Key | null | undefined) => {
                                 return (
                                     <Link key={index}  href={"product/"+post._id}>
                                         <ProductBox _id={post._id} title={post.title} description={post.ss} price={undefined} images={post.image}/>

@@ -1,4 +1,4 @@
-
+'use client'
 import { Key } from "react";
 import Header from "@/components/Header";
 import ProductBox from "@/components/ProductBox";
@@ -6,6 +6,8 @@ import FooterNav from "@/components/FooterNav";
 import Sidebar from "@/components/SidebarNav";
 import SidebarNav from "@/components/SidebarNav";
 import Link from "next/link";
+import {handleExternalUrl} from "next/dist/client/components/router-reducer/reducers/navigate-reducer";
+import SortProduct from "@/components/SortProduct";
 
 type Props = {
     posts: [Post]
@@ -58,7 +60,14 @@ export default async function Posts() {
     //     } catch (error) {
     //         console.log("An error occurred while deleting ", error);
     //     }
+
+
+
+
+
+
     // };
+
 
     return (
         <>
@@ -69,12 +78,7 @@ export default async function Posts() {
                 <SidebarNav/>
                 {/*<h1 className="">Top 20 Added Posts</h1>*/}
                 <div >
-                    <div className="m-4 flex flex-row-reverse">
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/best'>پرفروش</Link>
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/'>جدید ترین</Link>
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/'>ارزان ترین</Link>
-                        <Link className="rounded-md bg-white p-2 flex m-1" href='/'>گران ترین</Link>
-                    </div>
+                    <SortProduct/>
                 {data.posts.length > 0 ? (
                     <div className={"flex flex-wrap justify-center"}>
 

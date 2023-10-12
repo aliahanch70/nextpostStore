@@ -67,9 +67,10 @@ export default function Posts(props: { params: { id: string; }; }) {
             <Header></Header>
 
             <div className="flex flex-row-reverse">
-                {productD.map((post: Post, index: Key)=>
+                {productD.map((post, index: Key)=>
                     {
 
+                        // @ts-ignore
                         if(post.id === props.params.pid) {
                             // eslint-disable-next-line react/jsx-key
                             return <div key={index}>
