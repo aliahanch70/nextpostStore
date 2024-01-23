@@ -8,6 +8,7 @@ import SidebarNav from "@/components/SidebarNav";
 import Link from "next/link";
 import {handleExternalUrl} from "next/dist/client/components/router-reducer/reducers/navigate-reducer";
 import SortProduct from "@/components/SortProduct";
+import Footer from "@/components/Footer";
 
 type Props = {
     posts: [Post]
@@ -101,6 +102,7 @@ export default async function Posts() {
             </div>
 
         <FooterNav/>
+            <Footer/>
 
 
 

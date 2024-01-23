@@ -101,27 +101,27 @@ export default function Posts(props: { params: { id: string; }; }) {
                                 <p>{post.ss}</p>
 
                                 <div className="flex mb-4 product-item items-end flex-col-reverse lg:flex-row lg:items-center	">
-                                    <div className="lg:w-1/2 product-sum w-full" >
-                                        <div>
-                                        <h2 className="text-xl  font-bold">
-                                            {post.title}
-                                        </h2>
-                                        <h4 className="text-xs text-gray-400">
-                                            {post.subtitle}
-                                        </h4>
+                                    <div className="lg:w-1/2 product-sum w-full " >
+                                        <div className=" mr-5">
+                                            <h2 className="text-xl  font-bold ">
+                                                {post.title}
+                                            </h2>
+                                            <h4 className="text-xs text-gray-400">
+                                                {post.subtitle}
+                                            </h4>
+                                            </div>
+                                            <hr className="h-px my-2  bg-gray-300 border-0 dark:bg-gray-800"/>
+
+                                            <div className=" text-sm mr-5">
+                                                <p>
+                                                    brand:{post.brand}
+                                                </p>
+                                                <p>
+
+                                                </p>
                                         </div>
                                         <hr className="h-px my-2  bg-gray-300 border-0 dark:bg-gray-800"/>
-
-                                        <div className=" text-sm">
-                                            <p>
-                                                brand:{post.brand}
-                                            </p>
-                                            <p>
-
-                                            </p>
-                                        </div>
-                                        <hr className="h-px my-2  bg-gray-300 border-0 dark:bg-gray-800"/>
-                                        <div className=" text-sm text-gray-600">
+                                        <div className=" text-sm text-gray-600 mr-5">
                                             <p>
                                                 ویژگی ها:
                                             </p>
@@ -136,10 +136,10 @@ export default function Posts(props: { params: { id: string; }; }) {
 
                                         </div>
 
-                                        <div className="mb-5 flex w-full flex-col"><div className="mb-3.5 flex items-center"><p className="text-sm leading-5 text-gray-600">رنگ:</p><p className="mr-2.5 text-sm font-semiBold leading-5 text-gray-800 2xl:mr-2">سبز</p></div><div className="w-max max-w-[100%] border-b border-gray-400 pb-4"><div className="relative flex w-full items-center"><div className="overflow-x-auto no-scrollbar" ><div className="flex items-center scroll-smooth lg:pr-0" ><div className="flex items-center gap-2.5 w-fit flex-nowrap"><div className="cursor-pointer"><div className="flex w-max items-center border p-[3px] h-6.5 rounded-[7px] border-secondary-500"><span className="flex items-center justify-center  border border-gray-300 h-5 w-5 rounded-[6px]" ><svg className="icon-done fill-white w-6 h-6"><use ></use></svg></span><p className="ml-3 mr-2 select-none whitespace-nowrap text-xs leading-5 font-semiBold text-gray-700">سبز</p></div></div><div className="cursor-pointer"><div className="flex w-max items-center border p-[3px] h-6.5 rounded-[7px] border-gray-300 bg-white"><span className="flex items-center justify-center  border border-gray-300 h-5 w-5 rounded-[6px]" ></span><p className="ml-3 mr-2 select-none whitespace-nowrap text-xs leading-5 font-medium text-gray-600">بنفش</p></div></div><div className="cursor-pointer"><div className="flex w-max items-center border p-[3px] h-6.5 rounded-[7px] border-gray-300 bg-white"><span className="flex items-center justify-center  border border-gray-300 h-5 w-5 rounded-[6px]" ></span><p className="ml-3 mr-2 select-none whitespace-nowrap text-xs leading-5 font-medium text-gray-600">آبی</p></div></div></div><span className="flex h-1 w-1 p-1 lg:h-0.5 lg:w-0.5 lg:p-0.5"></span></div></div></div></div></div>
+                                        {/*<div className="mb-5 flex w-full flex-col"><div className="mb-3.5 flex items-center"><p className="text-sm leading-5 text-gray-600">رنگ:</p><p className="mr-2.5 text-sm font-semiBold leading-5 text-gray-800 2xl:mr-2">سبز</p></div><div className="w-max max-w-[100%] border-b border-gray-400 pb-4"><div className="relative flex w-full items-center"><div className="overflow-x-auto no-scrollbar" ><div className="flex items-center scroll-smooth lg:pr-0" ><div className="flex items-center gap-2.5 w-fit flex-nowrap"><div className="cursor-pointer"><div className="flex w-max items-center border p-[3px] h-6.5 rounded-[7px] border-secondary-500"><span className="flex items-center justify-center  border border-gray-300 h-5 w-5 rounded-[6px]" ><svg className="icon-done fill-white w-6 h-6"><use ></use></svg></span><p className="ml-3 mr-2 select-none whitespace-nowrap text-xs leading-5 font-semiBold text-gray-700">سبز</p></div></div><div className="cursor-pointer"><div className="flex w-max items-center border p-[3px] h-6.5 rounded-[7px] border-gray-300 bg-white"><span className="flex items-center justify-center  border border-gray-300 h-5 w-5 rounded-[6px]" ></span><p className="ml-3 mr-2 select-none whitespace-nowrap text-xs leading-5 font-medium text-gray-600">بنفش</p></div></div><div className="cursor-pointer"><div className="flex w-max items-center border p-[3px] h-6.5 rounded-[7px] border-gray-300 bg-white"><span className="flex items-center justify-center  border border-gray-300 h-5 w-5 rounded-[6px]" ></span><p className="ml-3 mr-2 select-none whitespace-nowrap text-xs leading-5 font-medium text-gray-600">آبی</p></div></div></div><span className="flex h-1 w-1 p-1 lg:h-0.5 lg:w-0.5 lg:p-0.5"></span></div></div></div></div></div>*/}
 
-                                        {test700()}
-                                        <div className="text-green-600 text-xl font-bold p-2">
+                                        {/*{test700()}*/}
+                                        <div className="text-green-600 text-xl font-bold p-2 mr-5">
                                              قیمت : {post.price} تومان
                                         </div>
 
@@ -152,8 +152,8 @@ export default function Posts(props: { params: { id: string; }; }) {
 
 
                                     </div>
-                                    <div className="lg:w-1/2 rounded product-sum w-full">
-                                        <img src={post.image} className="overflow-hidden rounded-xl" alt={post.title}/>
+                                    <div className="lg:w-1/2 rounded product-sum w-full ">
+                                        <img src={post.image} className="overflow-hidden rounded-xl m-auto" alt={post.title}/>
                                     </div>
                                 </div>
                                 <Table/>

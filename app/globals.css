@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-    background-color: rgba(213, 209, 246, 0.97);
+    background-color: rgb(35, 35, 35);
 }
 
 .product-div{
@@ -46,4 +46,8 @@
     /*width: 48%;*/
     clear: none;
 
+}
+
+TETabsItem {
+    padding: 100px;
 }
