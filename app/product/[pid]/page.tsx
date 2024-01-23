@@ -9,6 +9,7 @@ import Link from "next/link";
 
 import {productD} from "@/product";
 import ProductSum from "@/components/ProductSum";
+import Table from "@/components/Table";
 
 type Props = {
     posts: [Post]
@@ -99,8 +100,8 @@ export default function Posts(props: { params: { id: string; }; }) {
 
                                 <p>{post.ss}</p>
 
-                                <div className="flex mb-4 product-item">
-                                    <div className="w-1/2 product-sum" >
+                                <div className="flex mb-4 product-item items-end flex-col-reverse lg:flex-row lg:items-center	">
+                                    <div className="lg:w-1/2 product-sum w-full" >
                                         <div>
                                         <h2 className="text-xl  font-bold">
                                             {post.title}
@@ -151,10 +152,13 @@ export default function Posts(props: { params: { id: string; }; }) {
 
 
                                     </div>
-                                    <div className="w-1/2 rounded product-sum">
+                                    <div className="lg:w-1/2 rounded product-sum w-full">
                                         <img src={post.image} className="overflow-hidden rounded-xl" alt={post.title}/>
                                     </div>
                                 </div>
+                                <Table/>
+
+
 
 
                                 
